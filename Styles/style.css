@@ -245,3 +245,49 @@ body{
   color: #2e7d32;
   line-height: 1.5;
 }
+.site-footer {
+    background-color: #2e7d32;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .site-footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .site-footer p {
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 1.6;
+  }
+  
+  .footer-socials {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-socials li a {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-socials li a:hover {
+    color: #ffd54f; /* a warm yellow accent */
+  }
+  
+  .footer-bottom p {
+    font-size: 0.85rem;
+    margin-top: 20px;
+    opacity: 0.9;
+  }
+  
