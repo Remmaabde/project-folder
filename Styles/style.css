@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
     margin:0;
 }
@@ -129,8 +131,7 @@ body{
       }
       .title-ing{
         display:flex;
-        align-items: center;
-        justify-content: center;
+        gap:5px;
         background-color: #FEF1C2;
         color:rgb(5, 94, 25);
         box-shadow:inset 1px 1px 2px rgba(24, 61, 3, 0.1);
@@ -142,9 +143,105 @@ body{
         background-color: #FEF1C2;
       }
       img.ingredient{
-        margin-left:10px;
+        margin-left:30px;
       }
       .titles{
         margin-right:20%;
+        color:rgb(20, 170, 48);
       }
-    
+      .lentils i, .natural i, .source i {
+        color: #2e7d32; /* A lush green */
+        margin-right: 8px;
+        font-size: 1.2rem;
+      }
+      
+      /* Optional: give the whole line a vibe */
+      .lentils, .natural, .source {
+        font-family: 'Roboto', sans-serif;
+        font-size:2rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+      
+    .testim-title{
+        display:flex;
+        justify-content:flex-start;
+        background-color: #FFE59A;
+        color: rgb(4, 109, 28);
+        font-size:2rem;
+    }
+    .Testimonlas{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color:#FFE59A;
+        column-gap:20px;
+        height:350px;
+        padding:10px;
+        
+    }
+    .test1{
+        display:flex;
+        justify-content:center;
+        border:1px solid #ccc;
+        background-color: #DEE585;
+        font-size:2rem;
+    }
+
+
+.faq-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff9e6;
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.faq-title span {
+  color: red;
+  font-size: 2.5rem;
+  margin-left: 5px;
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  max-width: 1000px;
+  margin-left:30px;
+}
+
+.faq-card {
+  background-color: #ffeaa7;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.faq-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.faq-card p {
+  margin-left: 40px;
+  font-size: 1rem;
+  color: #2e7d32;
+  line-height: 1.5;
+}
