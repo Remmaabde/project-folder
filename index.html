@@ -20,10 +20,12 @@
           
             <div class="right-nav">
               <ul class="nav-links">
-                <li>Products</li>
-                <li>FAQ</li>
-                <li>Testimonials</li>
-                <li>Ingredient</li>
+                <li><a href="#products">Product</a></li>
+                <li><a href="#Testimonals">Testimonals</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <button id="themeToggle" class="theme-toggle-btn">🌙 Theme</button>
+
               </ul>
             </div>
           </nav>
@@ -37,7 +39,7 @@
                 <p>Early access to high-protein 
                     <br>snacks made for 
                     <br>performance and sustainability.</p>
-                <button>Join Early Access</button>
+                <button class="join-btn">Join Early Access</button>
               </div>
               <div class="image-section">
                 <img src="assets/images/Figma-new.jpg" alt="Plant Based Snack">
@@ -50,7 +52,8 @@
             <h1 class="benefit">Benefits of Fuel</h1>
         </div>
 
-        
+        <section id="products">
+          
         <div class="benefits">
             
             <div class="left">
@@ -84,7 +87,9 @@
                 </p>
             </div>
         </div>
-
+    </section>
+          
+    <section id="ingredients">
         <div class="title-ing">
             <h2 class="ingredients">Ingredient Transparency</h2>
         </div>
@@ -109,7 +114,9 @@
         </div>
 
         </div>
+    </section>
 
+    <section id="Testimonals">
         <div class="testim-title">
             <h2 class="testimonials">Testimonials</h2>
         </div>
@@ -141,41 +148,59 @@
             </p>
         </div>
     </div>
-
-    <section class="faq-section">
+    </section>
+    <section class="faq-section" id="FAQ">
         <h2 class="faq-title">FAQ <span>?</span></h2>
       
         <div class="faq-container">
           <div class="faq-card">
             <div class="faq-icon">+</div>
-            <p>1. What makes Plant Fuel different from other protein snacks?</p>
+            <p class="faq-question">1. What makes Plant Fuel different from other protein snacks?</p>
+          </div>
+          <div class="faq-answer">
+            <p>Plant Fuel is crafted with 100% plant-based ingredients, providing a clean and sustainable source of protein without any additives or preservatives. Our unique blend of lentils and quinoa ensures you get the nutrients you need without compromising on taste or health.</p>
           </div>
       
           <div class="faq-card">
             <div class="faq-icon">+</div>
-            <p>2. Where do you source your ingredients from?</p>
+            <p class="faq-question">2. Where do you source your ingredients from?</p>
+          </div>
+          <div class="faq-answer">
+            <p>We source our ingredients from sustainable farms that prioritize eco-friendly practices. Our lentils and quinoa are carefully selected to ensure the highest quality and nutritional value, supporting both your health and the planet.</p>
           </div>
       
           <div class="faq-card">
             <div class="faq-icon">+</div>
-            <p>3. Can I eat Plant Fuel before or after workout?</p>
+            <p class="faq-question">3. Can I eat Plant Fuel before or after workout?</p>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! Plant Fuel is designed to provide you with the energy and protein needed for both pre and post-workout recovery. Its balanced nutrients help fuel your performance and support muscle recovery.</p>
           </div>
         
 
         <div class="faq-card">
             <div class="faq-icon">+</div>
-            <p>4. How much does Plant Fuel weigh?</p>
+            <p class="faq-question">4. How much does Plant Fuel weigh?</p>
+          </div>
+          <div class="faq-answer">
+            <p>Each serving of Plant Fuel is approximately 50 grams, providing a perfect portion for a quick snack or a pre/post-workout boost. Our packaging is designed for convenience, making it easy to take on the go.</p>
           </div>
         
 
         <div class="faq-card">
             <div class="faq-icon">+</div>
-            <p>5. Can you deliver to other Countries?</p>
+            <p class="faq-question">5. Can you deliver to other Countries?</p>
+            <div class="faq-answer">
+            <p>Yes, we offer international shipping to select countries. Please check our shipping policy for more details on delivery options and times.</p>
+            </div>
           </div>
         
         <div class="faq-card">
             <div class="faq-icon">+</div>
-            <p>6. How much does Plant Fuel cost?</p>
+            <p class="faq-question">6. How much does Plant Fuel cost?</p>
+            <div class="faq-answer">
+            <p>Plant Fuel is priced at 4000ETB for a pack of 10 servings. We believe in providing high-quality, affordable nutrition that fits your lifestyle.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -191,9 +216,9 @@
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/reem-abdella-05954527a/"><i class="fab fa-linkedin"></i></a></li>
           </ul>
-      
+          
           <div class="footer-bottom">
             <p>© 2025 PlantFuel. All rights reserved. 🌍 | Built with ❤️ by Riri</p>
           </div>
@@ -201,5 +226,6 @@
       </footer>
       
     </div>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
