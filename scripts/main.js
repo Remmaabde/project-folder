@@ -9,7 +9,7 @@ if (savedTheme && savedTheme === 'dark') {
   toggleBtn.innerText = '☀️ Light';
 }
 
-//This function toggles the dark mode on and off when the button is clicked
+//This function toggles the dark mode on and off when the button is clicked.
 toggleBtn.addEventListener('click', function () {
   const isDark = document.body.classList.toggle('dark-mode');
 
@@ -28,7 +28,7 @@ const faqCards = document.querySelectorAll('.faq-card');
 faqCards.forEach(function(card) {
   const iconElement = card.querySelector('.faq-icon');
   const questionEl = card.querySelector('.faq-question');
-  const answerEl = card.querySelector('.faq-answer'); // not used, left for possible later use
+  const answerEl = card.querySelector('.faq-answer'); 
 
   function toggleFaq() {
     card.classList.contains('active') ? card.classList.remove('active') : card.classList.add('active');
@@ -37,4 +37,3 @@ faqCards.forEach(function(card) {
   if (iconElement) iconElement.addEventListener('click', toggleFaq);
   if (questionEl) questionEl.addEventListener('click', toggleFaq);
 });
-
