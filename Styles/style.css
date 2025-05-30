@@ -460,7 +460,7 @@ font-size: 1.1rem;
     margin-right: 0;
   }
   .footer-socials {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
