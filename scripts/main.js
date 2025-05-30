@@ -1,38 +1,40 @@
-const themeToggle = document.getElementById('themeToggle');
-const currentTheme = localStorage.getItem('theme');
+//Create a variable named toggleBtn that selects the button with the id themeToggle
+const toggleBtn = document.getElementById('themeToggle');
+//Create a variable named savedTheme that retrieves the theme from localStorage
+let savedTheme = localStorage.getItem('theme');
 
-if (currentTheme === 'dark') {
+// If savedTheme is 'dark', add the 'dark-mode' class to the body and change the button text to '☀️ Light'
+if (savedTheme && savedTheme === 'dark') {
   document.body.classList.add('dark-mode');
-  themeToggle.textContent = '☀️ Light';
+  toggleBtn.innerText = '☀️ Light';
 }
 
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
+//This function toggles the dark mode on and off when the button is clicked
+toggleBtn.addEventListener('click', function () {
+  const isDark = document.body.classList.toggle('dark-mode');
 
-  let theme = 'light';
-  if (document.body.classList.contains('dark-mode')) {
-    theme = 'dark';
-    themeToggle.textContent = '☀️ Light';
+  if (isDark) {
+    localStorage.setItem('theme', 'dark');
+    toggleBtn.innerText = '☀️ Light';
   } else {
-    themeToggle.textContent = '🌙 Dark';
-  }
-
-  localStorage.setItem('theme', theme);
-});
-
-
-document.querySelectorAll('.faq-card').forEach((card) => {
-  const icon = card.querySelector('.faq-icon');
-  const questionText = card.querySelector('.faq-question'); 
-  const answer = card.querySelector('.faq-answer');
-
-  icon.addEventListener('click', toggleAnswer);
-  questionText.addEventListener('click', toggleAnswer);
-
-  function toggleAnswer() {
-    card.classList.toggle('active');
+    localStorage.setItem('theme', 'light');
+    toggleBtn.innerText = '🌙 Dark';
   }
 });
 
 
+const faqCards = document.querySelectorAll('.faq-card');
+
+faqCards.forEach(function(card) {
+  const iconElement = card.querySelector('.faq-icon');
+  const questionEl = card.querySelector('.faq-question');
+  const answerEl = card.querySelector('.faq-answer'); // not used, left for possible later use
+
+  function toggleFaq() {
+    card.classList.contains('active') ? card.classList.remove('active') : card.classList.add('active');
+  }
+
+  if (iconElement) iconElement.addEventListener('click', toggleFaq);
+  if (questionEl) questionEl.addEventListener('click', toggleFaq);
+});
 
